@@ -18,7 +18,7 @@ jobs:
           $output=(perl -e 'print ($ENV{BODY} =~ /Merry/)?$ENV{GREETING}:$ENV{HEY};')
           Write-Output "::set-output name=GREET::$output"
       - name: Repository Dispatch
-        uses: SanJaYrOG/Repository_dispatch@v2.290.1
+        uses: SanJaYrOG/Repository_dispatch@v2.1.2
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           event-type: my-event
