@@ -1,5 +1,6 @@
 name: "We 🎔 Perl"
 on:
+  workflow_dispatch:
   issues:
     types: [opened, edited, milestoned]
 
