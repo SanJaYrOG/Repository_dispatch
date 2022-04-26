@@ -1,4 +1,4 @@
-name: "We Perl"
+name: "We perl"
 on:
   workflow_dispatch:
   issues:
