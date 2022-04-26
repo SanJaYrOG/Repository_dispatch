@@ -1,4 +1,4 @@
-name: "We perl"
+name: "We Perl"
 on:
   workflow_dispatch:
   issues:
@@ -18,7 +18,7 @@ jobs:
           $output=(perl -e 'print ($ENV{BODY} =~ /Merry/)?$ENV{GREETING}:$ENV{HEY};')
           Write-Output "::set-output name=GREET::$output"
       - name: Repository Dispatch
-        uses: actions/checkout@v2
+        uses: SanJaYrOG/Repository_dispatch@v1
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           event-type: my-event
